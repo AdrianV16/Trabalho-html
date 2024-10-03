@@ -1,0 +1,253 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	font: 16px/1 Arial, sans-serif
+}
+
+.sizer {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    max-height: 100vh;
+}
+
+.caixa {
+    padding: 40px;
+    font-family: sans-serif;
+    background: #ff682f;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.caixa nav {
+    display: flex;
+    gap: 24px;
+}
+
+.caixa nav a {
+    text-decoration: none;
+    transition: all ease-in-out 0.25s;
+    color: white;
+    font-size: 120%;
+
+    &:hover,
+    &.atual {
+        color: black;
+
+    }
+}
+
+.caixa h1 {
+    font-size: 40px;
+    font-style: italic;
+}
+
+.hero {
+    display: flex;
+    flex: 1 1 0;
+    overflow: hidden;
+}
+
+.hero img {
+    flex: 1 1 0;
+    object-fit: contain;
+    transform: translate(0, 8%);
+}
+
+.hero .container {
+    flex: 1 1 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero .hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    flex: 1 1 0;
+    justify-content: center;
+}
+
+.hero .container .hero-btn {
+    border: none;
+    text-decoration: none;
+    background: #006eff;
+    color: #fff;
+    font: bold 20px/1 sans-serif;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    transition: all ease-in-out 0.25s;
+    align-self: start;
+
+    &:hover {
+        background: blue;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.secao-produtos {
+    padding: 40px;
+    background: #cccc;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.secao-produtos h2 {
+    border-bottom: 2px solid;
+    margin-bottom: 40px;
+}
+
+.lista-produtos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    list-style: none;
+    justify-content: space-between;
+
+}
+
+.lista-produtos .produto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.lista-produtos .produto img {
+    width: 400px;
+    height: 400px;
+    object-fit: contain;
+}
+
+.lista-produtos .produto .nome {
+    font-size: 200%;
+
+}
+
+.lista-produtos .produto .preco {
+    font-size: 150%;
+}
+
+.lista-produtos .produto .botao-compra {
+    border: none;
+    text-decoration: none;
+    background: #006eff;
+    color: #fff;
+    font: bold 20px/1 sans-serif;
+    padding: 8px 16px;
+    border-radius: 1000px;
+    transition: all ease-in-out 0.25s;
+
+    &:hover {
+        background: blue;
+        transform: scale(1.2, 1.2);
+    }
+}
+
+.conteudo-contato {
+    display: flex;
+    padding: 40px;
+    gap: 40px;
+    
+}
+
+.conteudo-contato .formulario-contato {
+    background: #ff682f;
+    padding: 24px;
+    border-radius: 40px 0;
+    color: white;
+    flex: 1 1 0;
+    display: flex;
+    font-size: 130%;
+}
+
+.formulario-contato table{
+    flex: 1 1 0;
+    td{
+        padding: 10px
+    }
+}
+
+.formulario-contato .titulo{
+    font-size: 35px;
+    text-align: center;
+}
+
+.formulario-contato .obrigatorio{
+    color: red;
+    font-weight: bold;
+}
+
+.formulario-contato input,
+.formulario-contato textarea{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    font: inherit;
+    border: none;
+    border-radius: 20px 0;
+
+}
+
+.formulario-contato textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.formulario-contato button {
+    width: 100%;
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    font: inherit;
+    border: none;
+    border-radius: 20px 0;
+    background: #006eff;
+    transition: all ease-in-out 0.25s;
+    &:hover {
+        background: blue;
+        transform: scale(1.1, 1.2);
+        border-radius: 25px;
+    }
+}
+
+.conteudo-contato .infos-empresa {
+    flex: 1 1 0;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    gap: 30px;
+    font-size: 20px
+    
+}
+
+.infos-empresa .complemento{
+    display:flex;
+    gap: 24px;
+    align-items: center;
+    
+}
+
+.infos-empresa .complemento .decoracao {
+    height: 40px;
+    width: 40px;
+    background: #ff682f;
+    border-radius: 24px;
+}
+
+.infos-empresa .complemento .info{
+    display: flex;
+    flex-direction: column;
+}
+
+.infos-empresa .complemento .rotulo {
+    font-size: 24px;
+    color: #ff682f;
+    font-weight: bold;
+}
